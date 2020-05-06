@@ -1,15 +1,15 @@
-import Letters from './letters'
+import Characters from './characters'
 
 const transform = (text) => {
   return (
     text
       .split('')
-      .map((letter) => {
-        if (Letters[letter.toUpperCase()]) {
-          return Letters[letter.toUpperCase()].replace(/0/g, '     ').replace(/1/g, '&#128525;')
+      .map((character) => {
+        if (Characters[character.toUpperCase()]) {
+          return Characters[character.toUpperCase()].replace(/0/g, '     ').replace(/1/g, '&#128525;')
         }
-        
-        return letter
+
+        return ''
       })
       .join('')
   )

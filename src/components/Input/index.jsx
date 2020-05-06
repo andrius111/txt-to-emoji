@@ -5,15 +5,15 @@ import Style from './style.module.scss'
 
 const Input = (props) => {
   return (
-    <React.Fragment>
-      <h1>Input</h1>
+    <div className={ Style.input_container }>
+      <h1>Insert your text bellow:</h1>
       
       <textarea 
         className={ Style.input }
         onChange={ (event) => props.setValue(event.target.value) }
         value={ props.value }
       />
-    </React.Fragment>
+    </div>
   )
 }
 

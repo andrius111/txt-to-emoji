@@ -8,13 +8,6 @@ const ControllButtons = (props) => {
     <div className={ Style.tranform_button_container }>
       <button 
         className={ Style.button }
-        onClick={ props.handleTransform }
-      >
-        Transform
-      </button>
-
-      <button 
-        className={ Style.button }
         onClick={ props.handleClear }
       >
         Clear
@@ -24,7 +17,6 @@ const ControllButtons = (props) => {
 }
 
 ControllButtons.propTypes = {
-  handleTransform: PropTypes.func.isRequired,
   handleClear: PropTypes.func.isRequired
 }
 

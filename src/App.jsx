@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
+import transform from './utils/transform'
 
 import Input from './components/Input'
 import Output from './components/Output'
 import ControllButtons from './components/ControllButtons'
-
-import transform from './utils/transform'
 
 import Style from './App.module.scss'
 
@@ -12,7 +11,8 @@ const App = () => {
   const [input, setInput] = useState('')
   const [output, setOutput] = useState('')
 
-  const handleTransform = () => {
+  const handleTransform = (input) => {
+    setInput(input)
     setOutput(transform(input))
   }
 
@@ -22,14 +22,13 @@ const App = () => {
   }
 
   return (
-    <div className={ Style.container }>
+    <div className={ Style.container }>    
       <Input 
         value={ input }
-        setValue={ setInput }
+        setValue={ handleTransform }
       />
 
       <ControllButtons 
-        handleTransform={ handleTransform }
         handleClear={ handleClear }
       />
 

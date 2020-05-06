@@ -1,4 +1,4 @@
-const space = `<div>000000
+const Space = `<div>000000
 000000
 000000
 000000
@@ -8,4 +8,4 @@ const space = `<div>000000
 000000
 000000</div>`
 
-export default space
+export default Space

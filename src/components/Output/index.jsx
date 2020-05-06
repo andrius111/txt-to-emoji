@@ -6,13 +6,13 @@ import Style from './style.module.scss'
 
 const Output = (props) => {
   return (
-    <React.Fragment>
-      <h1>Output</h1>
+    <div className={ Style.output_container }>
+      <h1>Result:</h1>
       
       <div className={ Style.output }>
         { Parser(props.value) }
       </div>
-    </React.Fragment>
+    </div>
   )
 }
 
