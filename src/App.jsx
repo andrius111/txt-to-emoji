@@ -3,39 +3,43 @@ import transform from './utils/transform'
 
 import Input from './components/Input'
 import Output from './components/Output'
-import ControllButtons from './components/ControllButtons'
+import EmojiPicker from './components/EmojiPicker'
 
 import Style from './App.module.scss'
 
 const App = () => {
   const [input, setInput] = useState('')
   const [output, setOutput] = useState('')
+  const [emoji, setEmoji] = useState('😀')
 
   const handleTransform = (input) => {
     setInput(input)
-    setOutput(transform(input))
+    setOutput(transform(input, emoji))
   }
 
-  const handleClear = () => {
-    setInput('')
-    setOutput('')
+  const handleEmoji = (emoji) => {
+    setEmoji(emoji)
+    setOutput(transform(input, emoji))
   }
 
   return (
-    <div className={ Style.container }>    
-      <Input 
-        value={ input }
-        setValue={ handleTransform }
-      />
+    <React.Fragment>
+      <header className={ Style.header }>
+        Text to emoji
+      </header>
 
-      <ControllButtons 
-        handleClear={ handleClear }
-      />
+      <main className={ Style.container }>    
+        <Input setValue={ handleTransform } />
 
-      <Output 
-        value={ output }
-      />
-    </div>
+        <EmojiPicker handleEmoji={ handleEmoji } />
+
+        <Output value={ output } />
+      </main>
+
+      <footer className={ Style.footer }>
+        Made with ☕ by Andrius Martini
+      </footer>
+    </React.Fragment>
   )
 }
 

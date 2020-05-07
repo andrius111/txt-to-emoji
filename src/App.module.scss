@@ -1,7 +1,25 @@
+.header {
+  align-items: center;
+  display: flex;
+  font-size: 60px;
+  font-weight: bold;
+  height: 15vh;
+  justify-content: center;
+}
+
 .container {
   align-items: center;
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 75vh;
+  justify-content: center;
+}
+
+.footer {
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  height: 10vh;
   justify-content: center;
 }
