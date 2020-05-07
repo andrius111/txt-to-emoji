@@ -4,8 +4,6 @@ const One = `<div>0000
 0101
 0001
 0001
-0001
-0001
 0000</div>`
 
 export default One
