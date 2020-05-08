@@ -5,3 +5,10 @@
   justify-content: center;
   width: 20%;
 }
+
+@media (max-width: 930px) {
+  .emoji_picker_container {
+    padding-top: 20px;
+    width: 90%;
+  }
+}

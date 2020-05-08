@@ -1,0 +1,18 @@
+.header_container {
+  align-items: flex-end;
+  display: flex;
+  font-size: 60px;
+  font-weight: bold;
+  height: 20vh;
+  justify-content: center;
+}
+
+.logo {
+  width: 400px;
+}
+
+@media (max-width: 930px) {
+  .logo {
+    width: 300px;
+  }
+}

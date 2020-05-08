@@ -1,0 +1,24 @@
+.main_container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+  justify-content: center;
+}
+
+@media (min-width: 930px) and (max-width: 1200px) {
+  .main_container {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 930px) {
+  .main_container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    padding-top: 30px;
+  }
+}

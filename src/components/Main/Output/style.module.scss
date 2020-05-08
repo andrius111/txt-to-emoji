@@ -1,0 +1,42 @@
+.output_container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.output {
+  align-content: flex-start;
+  background-color: #FFF;
+  border: 0;
+  border-radius: 15px;
+  display: flex;
+  font-size: 8px;
+  font-family: none;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  outline: none;
+  overflow: hidden;
+  padding: 15px;
+  height: 430px;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+@media (min-width: 930px) and (max-width: 1200px) {
+  .output {
+    font-size: 4px;
+  }
+}
+
+@media (max-width: 930px) {
+  .output_container {
+    padding-top: 20px;
+    width: 90%;
+  }
+
+  .output {
+    font-size: 4px;
+    width: 90%;
+  }
+}
