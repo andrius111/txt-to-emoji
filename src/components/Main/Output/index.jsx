@@ -9,7 +9,7 @@ const Output = (props) => {
     <div className={ Style.output_container }>
       <h1>Enjoy the result:</h1>
       
-      <div className={ Style.output }>
+      <div className={ Style.output } style={ props.style }>
         { Parser(props.value) }
       </div>
     </div>
@@ -17,7 +17,8 @@ const Output = (props) => {
 }
 
 Output.propTypes = {
-  value: PropTypes.string.isRequired
+  value: PropTypes.string.isRequired,
+  style: PropTypes.object.isRequired
 }
 
 export default Output

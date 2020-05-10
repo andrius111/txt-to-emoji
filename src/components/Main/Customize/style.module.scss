@@ -1,0 +1,116 @@
+.customize_container {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  color: #00A6E8;
+  display: flex;
+  font-size: 15px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-top: 70px;
+  height: 430px;
+  width: 5%;
+}
+
+.customize_slider_container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.customize_slider {
+  background: #d3d3d3;
+  border-radius: 5px;
+  height: 10px;
+  margin-top: 5%;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .2s;
+  width: 80%;
+  -webkit-transition: .2s;
+  -webkit-appearance: none;
+}
+
+.customize_slider:hover {
+  opacity: 1;
+}
+
+.customize_slider::-webkit-slider-thumb {
+  appearance: none;
+  background: #00A6E8;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+}
+
+.customize_slider::-moz-range-thumb {
+  background: #00A6E8;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.customize_background_container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.customize_reset_button_container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.customize_reset_button {
+  background: red;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font: 15px 'Indie Flower', sans-serif;
+  height: 30px;
+  margin-bottom: 5%;
+  padding: 0 10px;
+  text-decoration: none;
+  transition: all 0.4s ease 0s;
+  width: 90%;
+}
+
+.customize_reset_button:hover {
+  color: #ffffff !important;
+  background: #f6b93b;
+  border-color: #f6b93b !important;
+  transition: all 0.4s ease 0s;
+}
+
+@media (max-width: 1500px) {
+  .customize_container {
+    font-size: 9px;
+  }
+
+  .customize_reset_button {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 930px) and (max-width: 1300px) {
+  .customize_container {
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: 970px) {
+  .customize_container {
+    margin-top: 10px;
+    height: 50px;
+    width: 81%;
+    margin-left: 0;
+  }
+}

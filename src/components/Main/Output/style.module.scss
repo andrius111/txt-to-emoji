@@ -23,13 +23,13 @@
   white-space: pre-wrap;
 }
 
-@media (min-width: 930px) and (max-width: 1200px) {
+@media (min-width: 930px) and (max-width: 1300px) {
   .output {
     font-size: 4px;
   }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 970px) {
   .output_container {
     padding-top: 20px;
     width: 90%;

@@ -3,10 +3,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 20%;
+  width: 18%;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 970px) {
   .emoji_picker_container {
     padding-top: 20px;
     width: 90%;
