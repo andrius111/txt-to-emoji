@@ -1,0 +1,19 @@
+.emoji_picker_container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+
+@media (min-width: 1150px) and (max-width: 1500px) {
+  .emoji_picker_container {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  .emoji_picker_container {
+    font-size: 12px;
+  }
+}
