@@ -6,14 +6,10 @@
   width: 80%;
 }
 
-@media (min-width: 1150px) and (max-width: 1500px) {
+/* Columns layout */
+@media (max-width: 1150px) {
   .emoji_picker_container {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 450px) {
-  .emoji_picker_container {
-    font-size: 12px;
+    margin-top: 10px;
+    width: 100%;
   }
 }

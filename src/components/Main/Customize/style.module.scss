@@ -17,18 +17,26 @@
   margin-top: 20px;
 }
 
+/* Font-size change for not broken in md screens */
 @media (min-width: 1150px) and (max-width: 1300px) {
   .customize_container {
     font-size: 12px;
   }
 }
 
+/* Columns layout */
 @media (max-width: 1150px) {
   .customize_container {
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-size: 20px;
     padding-top: 20px;
     width: 82%;
+  }
+
+  .customize_controls_container {
+    flex-direction: column;
+    height: 1125px;
   }
 }

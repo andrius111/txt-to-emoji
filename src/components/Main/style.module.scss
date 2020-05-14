@@ -6,12 +6,14 @@
   justify-content: center;
 }
 
+/* Font-size change for not broken in md screens */
 @media (min-width: 1150px) and (max-width: 1300px) {
   .main_container {
     font-size: 12px;
   }
 }
 
+/* Columns layout */
 @media (max-width: 1150px) {
   .main_container {
     align-items: center;

@@ -2,7 +2,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 25%;
 }
 
 .input {
@@ -17,6 +17,7 @@
   width: 100%;
 }
 
+/* Columns layout */
 @media (max-width: 1150px) {
   .input_container {
     align-items: center;
