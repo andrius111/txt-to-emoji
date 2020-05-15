@@ -22,7 +22,10 @@ const EmojiPicker = (props) => {
   }
 
   return (
-    <div className={ Style.emoji_picker_container }>
+    <div 
+      className={ Style.emoji_picker_container }
+      data-testid="emoji-picker-component"
+    >
       Select the emoji
 
       <Picker 

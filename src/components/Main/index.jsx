@@ -24,7 +24,10 @@ const Main = () => {
   }
 
   return (
-    <main className={ Style.main_container }>    
+    <main 
+      className={ Style.main_container }
+      data-testid="main-component"
+    >    
       <Input setValue={ handleTransform } />
 
       <Customize 

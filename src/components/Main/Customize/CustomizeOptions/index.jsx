@@ -37,6 +37,8 @@ const CustomizeOptions = (props) => {
   }
 
   const handleBackgroundColor = (color) => {
+    console.log('FDP')
+
     if (!color.hex) {
       return
     }
@@ -118,7 +120,10 @@ const CustomizeOptions = (props) => {
   }
 
   return (
-    <div className={ Style.cutomize_options_container }>
+    <div 
+      className={ Style.cutomize_options_container }
+      data-testid="customize-options-component"
+    >
       <div className={ Style.customize_options_slider_container }>
         Emoji Size
 

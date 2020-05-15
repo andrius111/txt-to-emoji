@@ -8,7 +8,10 @@ import Style from './style.module.scss'
 
 const Customize = (props) => {
   return (
-    <div className={ Style.customize_container }>
+    <div 
+      className={ Style.customize_container }
+      data-testid="customize-component"
+    >
       <h1>Customize:</h1>
 
       <div className={ Style.customize_controls_container }>

@@ -5,7 +5,10 @@ import Style from './style.module.scss'
 
 const Footer = () => {
   return (
-    <footer className={ Style.footer }> 
+    <footer 
+      className={ Style.footer }
+      data-testid="footer-component"
+    > 
       Made with 
       
       <Emoji 

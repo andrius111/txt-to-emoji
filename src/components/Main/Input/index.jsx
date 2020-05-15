@@ -5,11 +5,15 @@ import Style from './style.module.scss'
 
 const Input = (props) => {
   return (
-    <div className={ Style.input_container }>
+    <div 
+      className={ Style.input_container }
+      data-testid="input-component"
+    >
       <h1>Insert your text:</h1>
       
       <textarea 
         className={ Style.input }
+        data-testid="input-textarea"
         onKeyPress={ (event) => event.which === 13 ? event.preventDefault() : null }
         onChange={ (event) => props.setValue(event.target.value) }
       />

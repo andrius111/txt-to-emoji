@@ -6,10 +6,17 @@ import Style from './style.module.scss'
 
 const Output = (props) => {
   return (
-    <div className={ Style.output_container }>
+    <div 
+      className={ Style.output_container }
+      data-testid="output-component"
+    >
       <h1>Enjoy the result:</h1>
       
-      <div className={ Style.output } style={ props.style }>
+      <div 
+        className={ Style.output } 
+        data-testid="output-div"
+        style={ props.style }
+      >
         { Parser(props.value) }
       </div>
     </div>
