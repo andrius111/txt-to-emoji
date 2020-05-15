@@ -48,6 +48,23 @@ import Eight from './8'
 import Nine from './9'
 import Point from './point'
 import Space from './space'
+import Question from './Question'
+import Exclamation from './Exclamation'
+import CurlyBracesOpen from './CurlyBracesOpen'
+import CurlyBracesClose from './CurlyBracesClose'
+import ParenthesesOpen from './ParenthesesOpen'
+import ParenthesesClose from './ParenthesesClose'
+import Equals from './Equals'
+import Plus from './Plus'
+import Minus from './Minus'
+import Pipe from './Pipe'
+import Smaller from './Smaller'
+import Bigger from './Bigger'
+import Underscore from './Underscore'
+import Hashtag from './Hashtag'
+import At from './At'
+import Slash from './Slash'
+import BackSlash from './BackSlash'
 
 const Characters = {
   'A': A,
@@ -99,6 +116,23 @@ const Characters = {
   '8': Eight,
   '9': Nine,
   '.': Point,
+  '?': Question,
+  '!': Exclamation,
+  '{': CurlyBracesOpen,
+  '}': CurlyBracesClose,
+  '(': ParenthesesOpen,
+  ')': ParenthesesClose,
+  '=': Equals,
+  '+': Plus,
+  '-': Minus,
+  '|': Pipe,
+  '<': Smaller,
+  '>': Bigger,
+  '_': Underscore,
+  '#': Hashtag,
+  '@': At,
+  '/': Slash,
+  '\\': BackSlash,
   ' ': Space
 }
 
