@@ -8,7 +8,11 @@ import Style from './style.module.scss'
 
 const Output = (props) => {
   const handleDownload = () => {
-    html2canvas(document.querySelector('[data-testid=output-div]'), { backgroundColor: null }).then(canvas => {
+    html2canvas(
+      document.querySelector('[data-testid=output-div]'), { 
+        backgroundColor: null, 
+        scale: 3 
+    }).then(canvas => {
       const link = document.createElement('a')
       link.download = 'txt-to-emoji'
       link.href = canvas.toDataURL('image/png')
