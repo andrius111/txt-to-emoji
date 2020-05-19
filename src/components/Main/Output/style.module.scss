@@ -18,9 +18,35 @@
   outline: none;
   overflow: hidden;
   padding: 15px;
+  position: relative;
   height: 450px;
   width: 100%;
   white-space: pre-wrap;
+}
+
+.output_overlay {
+  align-items: flex-end;
+  display: flex;
+  height: 450px;
+  justify-content: flex-end;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  transition: all .75s;
+  top: 0;
+  width: 100%;
+}
+
+.output_overlay svg {
+  visibility: hidden;
+}
+
+.output_overlay:hover {
+  background-color: rgba(14, 91, 206, 0.35);
+}
+
+.output_overlay:hover svg {
+  visibility: visible;
 }
 
 @media (min-width: 930px) and (max-width: 1300px) {
