@@ -37,8 +37,6 @@ const CustomizeOptions = (props) => {
   }
 
   const handleBackgroundColor = (color) => {
-    console.log('FDP')
-
     if (!color.hex) {
       return
     }
@@ -128,12 +126,13 @@ const CustomizeOptions = (props) => {
         Emoji Size
 
         <input 
-          type="range" 
-          min="1" 
-          max="25" 
-          value={ emojiSize }
           className={ Style.customize_options_slider }
+          data-testid="input-emoji-size"
+          max="25" 
+          min="1" 
           onChange={ (event) => handleEmojiSize(event.target.value) }
+          type="range" 
+          value={ emojiSize }
         />
       </div>
 
@@ -208,6 +207,7 @@ const CustomizeOptions = (props) => {
       <div className={ Style.customize_options_reset_button_container }>
         <button
           className={ Style.customize_options_reset_button } 
+          data-testid="button-reset"
           onClick={ handleReset }
         >
           Reset
