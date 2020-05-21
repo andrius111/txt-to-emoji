@@ -18,3 +18,9 @@ body {
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
+
+.emoji-size {
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+}

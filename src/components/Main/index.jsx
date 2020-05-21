@@ -10,7 +10,7 @@ import Style from './style.module.scss'
 const Main = () => {
   const [input, setInput] = useState('')
   const [output, setOutput] = useState('')
-  const [emoji, setEmoji] = useState('😀')
+  const [emoji, setEmoji] = useState('53.5714% 62.5%')
   const [outputStyle, setOutputStyle] = useState({})
 
   const handleTransform = (input) => {
@@ -19,8 +19,16 @@ const Main = () => {
   }
 
   const handleEmoji = (emoji) => {
-    setEmoji(emoji)
-    setOutput(transform(input, emoji))
+    let emojiPosition = document.querySelector('[aria-label*="'+ emoji +'"]')
+    
+    if (!emojiPosition) {
+      return
+    }
+    
+    emojiPosition = emojiPosition.children[0].style.backgroundPosition
+
+    setEmoji(emojiPosition)
+    setOutput(transform(input, emojiPosition))
   }
 
   return (

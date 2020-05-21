@@ -28,16 +28,20 @@ const CustomizeOptions = (props) => {
       return
     }
         
-    let objOutputSyle = Object.assign({}, outputStyle)
-    objOutputSyle.fontSize = value + 'px'
-    
     setEmojiSize(value)
-    setOutputStyle(objOutputSyle)
-    props.setOutputStyle(objOutputSyle)
+
+    const emojis = document.querySelectorAll('.emoji-size')
+
+    if (emojis) {
+      emojis.forEach(emoji => {
+        emoji.style.width = value + 'px'
+        emoji.style.height = value + 'px'
+      })
+    }
   }
 
   const handleBackgroundColor = (color) => {
-    if (!color.hex) {
+    if (!color) {
       return
     }
 
