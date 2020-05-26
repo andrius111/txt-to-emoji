@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import useWindowDimensions from '../../../../utils/useWindowDimensions.js'
 
 import Alien from '../../../../assets/emojis/Alien.png'
 import BlowKiss from '../../../../assets/emojis/BlowKiss.png'
@@ -48,20 +47,6 @@ import YellowMoon from '../../../../assets/emojis/YellowMoon.png'
 import Style from './style.module.scss'
 
 const EmojiPicker = (props) => {
-  const { width } = useWindowDimensions()
-
-  const getEmojiSize = () => {
-    if (!width || isNaN(parseInt(width))) {
-      return 35
-    }
-
-    if (width <= 1150) {
-      return 45
-    }
-
-    return 35
-  }
-
   const emojis = [
     { img: SlightlySmiling, alt: 'Slightly Smiling' },
     { img: HuggingFace, alt: 'Hugging Face' },

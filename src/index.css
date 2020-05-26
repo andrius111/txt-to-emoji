@@ -24,3 +24,24 @@ body {
   height: 9px;
   width: 9px;
 }
+
+@media (max-width: 1650px) {
+  .emoji-size {
+    height: 8px;
+    width: 8px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .emoji-size {
+    height: 7px;
+    width: 7px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .emoji-size {
+    height: 6px;
+    width: 6px;
+  }
+}
