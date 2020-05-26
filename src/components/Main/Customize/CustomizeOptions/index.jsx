@@ -13,6 +13,7 @@ import {
   MdVerticalAlignBottom
 } from "react-icons/md";
 
+import SlightlySmiling from '../../../../assets/emojis/SlightlySmiling.png'
 import Style from './style.module.scss'
 
 const CustomizeOptions = (props) => {
@@ -111,14 +112,14 @@ const CustomizeOptions = (props) => {
   }
 
   const handleReset = () => {
-    handleEmojiSize('8')
+    handleEmojiSize('9')
     handleBackgroundColor('#fff')
     setHorizontalAlign('left')
     setVerticalAlign('top')
 
     setOutputStyle({})
     props.setOutputStyle({})
-    props.handleEmoji('😀')
+    props.setEmoji(SlightlySmiling)
   }
 
   return (
@@ -223,7 +224,7 @@ const CustomizeOptions = (props) => {
 
 CustomizeOptions.propTypes = {
   setOutputStyle: PropTypes.func.isRequired,
-  handleEmoji: PropTypes.func.isRequired
+  setEmoji: PropTypes.func.isRequired
 }
 
 export default CustomizeOptions

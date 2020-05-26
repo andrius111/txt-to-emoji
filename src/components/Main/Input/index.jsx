@@ -15,14 +15,14 @@ const Input = (props) => {
         className={ Style.input }
         data-testid="input-textarea"
         onKeyPress={ (event) => event.which === 13 ? event.preventDefault() : null }
-        onChange={ (event) => props.setValue(event.target.value) }
+        onChange={ (event) => props.setInput(event.target.value) }
       />
     </div>
   )
 }
 
 Input.propTypes = {
-  setValue: PropTypes.func.isRequired
+  setInput: PropTypes.func.isRequired
 }
 
 export default Input

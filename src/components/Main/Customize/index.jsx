@@ -15,11 +15,14 @@ const Customize = (props) => {
       <h1>Customize:</h1>
 
       <div className={ Style.customize_controls_container }>
-        <EmojiPicker handleEmoji={ props.handleEmoji } />
+        <EmojiPicker 
+          emoji={ props.emoji }
+          setEmoji={ props.setEmoji }
+        />
 
         <CustomizeOptions 
           setOutputStyle={ props.setOutputStyle } 
-          handleEmoji={ props.handleEmoji }
+          setEmoji={ props.setEmoji }
         />
       </div>
     </div>
@@ -27,7 +30,8 @@ const Customize = (props) => {
 }
 
 Customize.propTypes = {
-  handleEmoji: PropTypes.func.isRequired,
+  emoji: PropTypes.string.isRequired,
+  setEmoji: PropTypes.func.isRequired,
   setOutputStyle: PropTypes.func.isRequired
 }
 
