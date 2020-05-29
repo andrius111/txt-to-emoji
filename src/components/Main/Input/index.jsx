@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import Style from './style.module.scss'
 
-const Input = (props) => {
+const Input = props => {
   return (
     <div 
       className={ Style.input_container }

@@ -6,7 +6,7 @@ import html2canvas from 'html2canvas'
 
 import Style from './style.module.scss'
 
-const Output = (props) => {
+const Output = props => {
   const handleDownload = () => {
     html2canvas(
       document.querySelector('[data-testid=output-div]'), { 

@@ -46,7 +46,7 @@ import YellowMoon from '../../../../assets/emojis/YellowMoon.png'
 
 import Style from './style.module.scss'
 
-const EmojiPicker = (props) => {
+const EmojiPicker = props => {
   const emojis = [
     { img: SlightlySmiling, alt: 'Slightly Smiling' },
     { img: HuggingFace, alt: 'Hugging Face' },

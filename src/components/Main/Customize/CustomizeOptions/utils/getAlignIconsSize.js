@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-const getAlignIconsSize = (width) => {
+const getAlignIconsSize = width => {
   if (!width || isNaN(parseInt(width)) || width === 0) {
     return 20
   }

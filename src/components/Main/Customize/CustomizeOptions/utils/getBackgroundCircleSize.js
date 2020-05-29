@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-const getBackgroundCircleSize = (width) => {
+const getBackgroundCircleSize = width => {
   if (!width || isNaN(parseInt(width)) || width === 0) {
     return 17
   }

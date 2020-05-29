@@ -16,7 +16,7 @@ import {
 import SlightlySmiling from '../../../../assets/emojis/SlightlySmiling.png'
 import Style from './style.module.scss'
 
-const CustomizeOptions = (props) => {
+const CustomizeOptions = props => {
   const [emojiSize, setEmojiSize] = useState('8')
   const [backgroundColor, setBackgroundColor] = useState('#fff')
   const [horizontalAlign, setHorizontalAlign] = useState('left')
@@ -24,7 +24,7 @@ const CustomizeOptions = (props) => {
   const [outputStyle, setOutputStyle] = useState({})
   const { width } = useWindowDimensions()
 
-  const handleEmojiSize = (value) => {
+  const handleEmojiSize = value => {
     if (isNaN(parseInt(value)) || parseInt(value) > 25 || parseInt(value) < 0) {
       return
     }
@@ -41,7 +41,7 @@ const CustomizeOptions = (props) => {
     }
   }
 
-  const handleBackgroundColor = (color) => {
+  const handleBackgroundColor = color => {
     if (!color) {
       return
     }
@@ -54,7 +54,7 @@ const CustomizeOptions = (props) => {
     props.setOutputStyle(objOutputSyle)
   }
 
-  const handleHorizontalAlign = (align) => {
+  const handleHorizontalAlign = align => {
     if (!align) {
       return
     }
@@ -80,7 +80,7 @@ const CustomizeOptions = (props) => {
     props.setOutputStyle(objOutputSyle)
   }
 
-  const handleVerticalAlign = (align) => {
+  const handleVerticalAlign = align => {
     if (!align) {
       return
     }

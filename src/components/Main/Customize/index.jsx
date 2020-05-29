@@ -6,7 +6,7 @@ import CustomizeOptions from './CustomizeOptions'
 
 import Style from './style.module.scss'
 
-const Customize = (props) => {
+const Customize = props => {
   return (
     <div 
       className={ Style.customize_container }
