@@ -28,7 +28,7 @@ const Output = props => {
       <h1>Enjoy the result:</h1>
       
       <div 
-        className={ Style.output } 
+        className={ Style.output + ' ' + props.emojiSizeClass } 
         data-testid="output-div"
         style={ props.style }
       >
@@ -50,7 +50,8 @@ const Output = props => {
 
 Output.propTypes = {
   value: PropTypes.string.isRequired,
-  style: PropTypes.object.isRequired
+  style: PropTypes.object.isRequired,
+  emojiSizeClass: PropTypes.string.isRequired
 }
 
 export default Output

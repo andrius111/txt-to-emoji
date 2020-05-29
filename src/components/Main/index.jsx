@@ -13,6 +13,7 @@ const Main = () => {
   const [output, setOutput] = useState('')
   const [emoji, setEmoji] = useState(SlightlySmiling)
   const [outputStyle, setOutputStyle] = useState({})
+  const [emojiSizeClass, setEmojiSizeClass] = useState('')
 
   useEffect(() => {
     setOutput(transform(input, emoji))
@@ -29,11 +30,13 @@ const Main = () => {
         emoji={ emoji } 
         setEmoji={ setEmoji }
         setOutputStyle={ setOutputStyle } 
+        setEmojiSizeClass={ setEmojiSizeClass }
       />
 
       <Output 
         value={ output } 
         style={ outputStyle } 
+        emojiSizeClass={ emojiSizeClass }
       />
     </main>
   )

@@ -23,6 +23,7 @@ const Customize = props => {
         <CustomizeOptions 
           setOutputStyle={ props.setOutputStyle } 
           setEmoji={ props.setEmoji }
+          setEmojiSizeClass={ props.setEmojiSizeClass }
         />
       </div>
     </div>
@@ -32,7 +33,8 @@ const Customize = props => {
 Customize.propTypes = {
   emoji: PropTypes.string.isRequired,
   setEmoji: PropTypes.func.isRequired,
-  setOutputStyle: PropTypes.func.isRequired
+  setOutputStyle: PropTypes.func.isRequired,
+  setEmojiSizeClass: PropTypes.func.isRequired
 }
 
 export default Customize

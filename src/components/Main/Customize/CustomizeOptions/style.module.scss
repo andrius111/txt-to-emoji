@@ -113,6 +113,13 @@
   width: 100%;
 }
 
+@for $i from 1 through 25 {
+  .emoji_size_#{$i} img, .emoji_size_#{$i} span {
+    height: #{$i}px !important;
+    width: #{$i}px !important;
+  }
+}
+
 /* Font-size change for not broken in md screens */
 @media (min-width: 1150px) and (max-width: 1500px) {
   .cutomize_options_container {

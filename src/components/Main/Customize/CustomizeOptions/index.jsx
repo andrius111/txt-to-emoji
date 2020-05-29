@@ -25,20 +25,18 @@ const CustomizeOptions = props => {
   const { width } = useWindowDimensions()
 
   const handleEmojiSize = value => {
-    if (isNaN(parseInt(value)) || parseInt(value) > 25 || parseInt(value) < 0) {
+    if (isNaN(parseInt(value)) || parseInt(value) > 25 || parseInt(value) < 5) {
       return
     }
         
     setEmojiSize(value)
 
-    const emojis = document.querySelectorAll('.emoji-size')
-
-    if (emojis) {
-      emojis.forEach(emoji => {
-        emoji.style.width = value + 'px'
-        emoji.style.height = value + 'px'
-      })
+    if (parseInt(value) === 9) {
+      props.setEmojiSizeClass('')
+      return
     }
+
+    props.setEmojiSizeClass(Style['emoji_size_' + value])
   }
 
   const handleBackgroundColor = color => {
@@ -134,7 +132,7 @@ const CustomizeOptions = props => {
           className={ Style.customize_options_slider }
           data-testid="input-emoji-size"
           max="25" 
-          min="1" 
+          min="5" 
           onChange={ (event) => handleEmojiSize(event.target.value) }
           type="range" 
           value={ emojiSize }
@@ -224,7 +222,8 @@ const CustomizeOptions = props => {
 
 CustomizeOptions.propTypes = {
   setOutputStyle: PropTypes.func.isRequired,
-  setEmoji: PropTypes.func.isRequired
+  setEmoji: PropTypes.func.isRequired,
+  setEmojiSizeClass: PropTypes.func.isRequired
 }
 
 export default CustomizeOptions
