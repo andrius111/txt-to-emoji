@@ -7,7 +7,8 @@ test('Should render the CustomizeOptions component whitout errors', () => {
   const { getByTestId } = render(
     <CustomizeOptions 
       setOutputStyle={ () => false }
-      handleEmoji={ () => false }
+      setEmoji={ () => false }
+      setEmojiSizeClass={ () => false }
     />
   )
 

@@ -6,8 +6,10 @@ import Customize from '../components/Main/Customize'
 test('Should render the Customize component whitout errors', () => {
   const { getByTestId } = render(
     <Customize 
-      handleEmoji={ () => false }
+      emoji=''
+      setEmoji={ () => false }
       setOutputStyle={ () => false }
+      setEmojiSizeClass={ () => false }
     />
   )
 

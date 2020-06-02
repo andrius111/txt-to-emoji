@@ -6,8 +6,9 @@ import Output from '../components/Main/Output'
 test('Should render the Output component whitout errors', () => {
   const { getByTestId } = render(
     <Output 
-      value="test" 
+      value='test'
       style={{}}
+      emojiSizeClass=''
     />
   )
 

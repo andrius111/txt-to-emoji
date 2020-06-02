@@ -13,7 +13,7 @@ describe('Main component tests', () => {
   })
 
   it('Should insert a text and render in the output', () => {
-    const { getByTestId } = render(<Main />)
+    const { getByTestId, getByAltText } = render(<Main />)
 
     fireEvent.change(
       getByTestId('input-textarea'), { 
@@ -23,7 +23,7 @@ describe('Main component tests', () => {
       }
     )
 
-    expect(getByTestId('output-div')).toHaveTextContent('😀')
+    expect(getByAltText('Emoji'))
   })
 
   it('Should change the emoji succefully', () => {
