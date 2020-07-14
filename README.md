@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="txt-to-emoji" src="https://res.cloudinary.com/andriusmartini/image/upload/v1594693336/readmes/txt-to-emoji/logo_ity7l9.png" />
+  <img width="70%" alt="txt-to-emoji" src="https://res.cloudinary.com/andriusmartini/image/upload/v1594693336/readmes/txt-to-emoji/logo_ity7l9.png" />
 
   <br>
       
@@ -12,22 +12,22 @@
   <img src="https://api.netlify.com/api/v1/badges/9c124f67-8f6e-4376-9c83-62c1657abf45/deploy-status">
 </p>
 
-<h2>A fun site that emojify your messages</h2>
+<h2 align="center">A fun site that emojify your messages</h2>
 
-### 🏠 [Click here to access the website](https://txt-to-emoji.netlify.app)
+## 🏠 [Click here to access the website](https://txt-to-emoji.netlify.app)
 
-## Screenshots
-### Desktop
+## 📷 Screenshots
+### 💻 Desktop
 <p align="center">
   <img alt="Desktop Screenshot" src="https://res.cloudinary.com/andriusmartini/image/upload/v1594693064/readmes/txt-to-emoji/desktop_niopni.png">
 </p>
 
-### Mobile
+### 📱 Mobile
 <p align="center">
   <img alt="Mobile Screenshot" src="https://res.cloudinary.com/andriusmartini/image/upload/v1594693058/readmes/txt-to-emoji/mobile_gmcntv.png">
 </p>
 
-## Technologies
+## 🛠 Technologies
 This project was developed with the following technologies:
 
 - [react](https://github.com/facebook/react)
@@ -37,9 +37,9 @@ This project was developed with the following technologies:
 - [html2canvas](https://github.com/niklasvh/html2canvas)
 - [prop-types](https://github.com/facebook/prop-types)
 
-## Author
+## 👤 Author
 
-👤 **Andrius Martini**
+**Andrius Martini**
 
 * Github: [@andrius.martini](https://github.com/andrius.martini)
 * LinkedIn: [@andrius.martini](https://linkedin.com/in/andrius.martini)
